@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+    --bs-secondary-bg-rgb: 52,58,64;
+    --bs-bg-opacity: 1;
+
+    --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    --bs-modal-header-padding-x: 1rem;
+    --bs-modal-header-padding-y: 1rem;
+
+    --bs-border-radius-lg: 0.5rem;
+
+    --shadow-1: 10px 10px 19px #1c1e22,
+      -10px -10px 19px #262a2e;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    background: #212428;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .checkbtn,
+  .clearbtn {
+    width: auto;
+    padding: 10px 18px;
+    
+  }
+
+  .checkbtn {
+    background-color: var(--blue);
+    width: 100%;
+    max-width: 110px;
+  }
+  
+  .clearbtn {
+    background-color: #f44336;
+    float: right;
+    width: 100%;
+    max-width: 110px;
+  }
+
+  label {
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 1.625rem;
+  }
+
+  label > b {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  header {
+    width: 80%;
+    margin: auto;
+  }
+
+  header img {
+    display: block;
+    width: 80px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header h1 {
+    text-align: center;
+    color: #676767;;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+
+  .container.act-button {
+    background-color: #d4edda;
+    margin-top: 10px;
+  }
+
+  .container.main-content {
+    height: 370px;
+    overflow-y: auto;
+  }
+
+  .dot {
+    width: 100%;
+    max-width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 100%;
+    margin: -10px auto;
+    border: 6px solid black;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  .modal {
+    margin: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 380px;
+    height: 100%;
+    overflow: auto;
+    padding-top: 100px;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 15px solid black;
+    border-bottom: 30px solid black;
+    border-radius: 20px;
+    width: 80%;
+    height: 100%;
+    max-height: 500px;
+    box-shadow: var(--shadow-1);
+  }
+
+.alert {
+  margin-top: 15px;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.display {
+  display: none;
+}
+
+.footer {
+  width: 100%;
+  max-width: 380px;
+  font-size: 1rem;
+  color: #676767;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer p a {
+  color: #676767;
+}
+
+.footer p a:hover {
+  color: #f6b846;
+}
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .modal {
+        height: 100%;
+    }
+    .checkbtn {
+       max-width: 100%;
+    }
+    .clearbtn {
+        max-width: 100%;
+    }
+    .container.main-content {
+      height: 325px;
+    }
+    .container.act-button {
+      height: 130px;
+    }
+
+  }
